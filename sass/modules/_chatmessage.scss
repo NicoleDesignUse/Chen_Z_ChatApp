@@ -1,0 +1,18 @@
+.header { 
+    text-align: center;
+    grid-area: 1 / 1 / 2 / 6; 
+    background-color: grey;
+}
+.sideBar { 
+    grid-area: 2 / 1 / 4 / 2; 
+    background-color: grey;
+}
+.messageOut { 
+    grid-area: 2 / 2 / 3 / 6; 
+    background-color: grey;
+}
+.messageIn { 
+    grid-area: 3 / 2 / 4 / 6; 
+    background-color: grey;
+}
+

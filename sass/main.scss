@@ -1,9 +1,15 @@
 @import './modules/_reset.scss';
 @import './modules/_var.scss';
+@import './modules/_login.scss';
 
 @import './modules/_chatmessage.scss';
 
 //write some defaults here
+.hidden
+{
+    display: none;
+}
+
 * {
     margin: 0;
     border: none;
@@ -14,19 +20,27 @@
 
 body {
     font-size: 16px;
-    background-color: #333;
-    color: white;
-
+    //background: rgb(34,193,195);
+    //background: linear-gradient(321deg, rgba(34,193,195,1) 0%, rgba(231,188,60,1) 63%, rgba(253,187,45,1) 100%);
+    //color: aliceblue;
+   // background-size: cover;
+    //background-color: rgb(1, 25, 48);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 main { 
-    display: grid; 
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1em;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 5em 13em;
+    
+    //background: rgb(34,193,195);
+    //background: linear-gradient(321deg, rgba(34,193,195,1) 0%, rgba(231,188,60,1) 63%, rgba(253,187,45,1) 100%);
+
 }
 
-main section { padding: 1em; }
 
 #main-headline { text-align: center; margin-bottom: 0.8em; }
 
