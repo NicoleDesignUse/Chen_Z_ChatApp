@@ -1,6 +1,6 @@
 .header { 
     text-align: center;
-    grid-area: 1 / 1 / 2 / 6; 
+    grid-area: 1 / 1 / 2 / 5; 
 
 
     padding: 3em;
@@ -8,12 +8,17 @@
 }
 
 #sideBar { 
-    grid-area: 2 / 1 / 4 / 2; 
+    grid-area: 2 / 1 / 5 / 2; 
     //background-color: grey;
     padding: 0px 30px;
+    margin: 0em 3em 3em;
+    border-radius: 18px;
+background: #1f1f23;
+box-shadow: inset 12px 12px 24px #1a1a1d,
+            inset -12px -12px 24px #242429;
 }
 .messageOut { 
-    grid-area: 2 / 2 / 3 / 6; 
+    grid-area: 2 / 2 / 4 / 5;
     padding: 30px;
     margin: 0em 8em 2em 0em;
     //background-color: grey;
@@ -23,7 +28,21 @@
                 -11px -11px 23px #28282e;
 }
 .messageIn { 
-    grid-area: 3 / 2 / 4 / 6; 
-    //background-color: grey;
-}
+    grid-area: 4 / 2 / 5 / 5;
 
+    .message {
+        width: 90%;
+    }
+  
+    .inputBtn {
+        width: 20%;
+        text-align: center;
+        margin: 2em 0em;
+        padding: 10px;
+        border-radius: 46px;
+        background: #1f1f23;
+        box-shadow:  11px 11px 23px #161619,
+                    -11px -11px 23px #28282e;
+    }
+
+}
