@@ -68,21 +68,40 @@ textarea {
 
 .chat_messages {
     width: 45%;
-    border-radius: 1em;
-    padding: 0.5em;
-    //color: #1c1c1e;
-    background-color: #ffffff;
+
     clear: both;
     float: left;
+
+    h2 {
+        text-align: left;
+
+        font-weight: thin; 
+    }
+
+    .subText {
+        color: #1c1c1e;
+        background-color: #ffffff;
+        border-radius: 1em;
+        padding: 0.5em;
+
+    }
 }
 
 .other_messages {
-    background-color: #FF8F08;
-    //color: #ffffff;
+    
     width: 45%;
     border-radius: 1em;
     padding: .5em 1em;
     margin-bottom: .8em;
     float: right;
     clear: both;
+    
+    h2 {
+        text-align: right;
+    }
+
+    .subText {
+        background-color: #FF8F08;
+        color: #ffffff;
+    }
 }
