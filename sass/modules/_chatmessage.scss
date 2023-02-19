@@ -13,9 +13,9 @@
     padding: 0px 30px;
     margin: 0em 3em 3em;
     border-radius: 18px;
-background: #1f1f23;
-box-shadow: inset 12px 12px 24px #1a1a1d,
-            inset -12px -12px 24px #242429;
+    background: #1f1f23;
+    box-shadow: inset 12px 12px 24px #1a1a1d,
+                inset -12px -12px 24px #242429;
 }
 .messageOut { 
     grid-area: 2 / 2 / 4 / 5;
@@ -35,14 +35,66 @@ box-shadow: inset 12px 12px 24px #1a1a1d,
     }
   
     .inputBtn {
+
+        float: right;
+
         width: 20%;
         text-align: center;
-        margin: 2em 0em;
+
+        margin: 2em 7.5em 3em;
+
         padding: 10px;
+
         border-radius: 46px;
+
         background: #1f1f23;
         box-shadow:  11px 11px 23px #161619,
                     -11px -11px 23px #28282e;
     }
 
+    .inputBtn:hover {
+        background: #FF8F08;
+        transition: all ease-in .3s;
+        cursor: pointer;
+    }
+
+}
+
+.images {
+    
+
+    ul {
+
+        margin: 2em;
+        padding: 0;
+        overflow: hidden;
+       
+    }
+
+    li {
+        width: 2.5em;
+        height: 2.5em;
+        margin: 2.4em .5em 0em;
+        float: left;
+        //background-color: #16161a;
+        background-color: #FF8F08;
+        box-shadow:  11px 11px 23px #161619,
+        -11px -11px 23px #28282e;
+
+        list-style-type: none;
+
+        border-radius: 30px;
+    }
+
+    li:hover {
+        background-color: #16161a;
+        transition: all ease-in .4s;
+        cursor: pointer;
+    }
+
+    li img {
+       width: 100%;
+       padding: .6em;
+       color: aliceblue;
+    }
 }

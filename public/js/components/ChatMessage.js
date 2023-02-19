@@ -6,7 +6,7 @@ export default {
     `
     <article class="chat_messages" :class="{ 'other_messages' : matchedID}">
         <h2>{{ message.name }} says:</h2>
-        <p>{{ message.content }}</p>
+        <p class="subText">{{ message.content }}</p>
     </article>
     `,
 

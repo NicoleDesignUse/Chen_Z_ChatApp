@@ -55,9 +55,17 @@
            </div>
            <div class="messageIn">
             <section>
-                <form>
+                <form class="inputSection">
                     <label class="hidden" for="message">something to say?</label>
-                    <textarea @focus="catchTextFocus" v-model="message" class="message" id="textarea" autocomplete="off"></textarea>
+                    <textarea @focus="catchTextFocus" v-model="message" placeholder="Enter your message here..." class="message" id="textarea" autocomplete="off"></textarea>
+                    <div>
+                        <ul  class="images">
+                            <li><img src="./images/camera-solid.svg" alt="icon for camera"></li>
+                            <li><img src="./images/face-smile-solid.svg" alt=""></li>
+                            <li><img src="./images/image-solid.svg" alt=""></li>
+                            <li><img src="./images/phone-solid.svg" alt=""></li>
+                        </ul>
+                    </div>
                     <div @click.prevent="dispatchMessage" type="submit" class="inputBtn" value="send"> ENTER </div>
                 </form>
             </section>
