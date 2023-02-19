@@ -9,52 +9,57 @@
 </head>
 <body>
     <h1 class="hidden">Chat App Build</h1>
-    <section>
+               <!--<section>
         <h2 class="hidden">Start the app</h2>
         <div class="login">
             <h3 class="hidden">login section</h3>
-            <input id="nickname" v-model="nickname" type="text" placeholder="nickname?">
+            <!--
+                <input id="nickname" v-model="nickname" type="text" placeholder="nickname?">
             <button id="nameBtn">Enter</button>
         </div>
-    </section>
+    </section>-->
     <main id="app">
         <h2 class="hidden"> chat app ui box display</h2>
+            <h4>Welcome! please choose a username and Icon!</h4>
+                <form >
+                    <input id="nickname" v-model="nickname" type="text" placeholder="nickname?">
+                    <input type="submit" value="Join" />
+                  </form>
+                  <button>Join as a Guest</button>
 
-
-       <div class="header">
-        <h3 class="hidden">chat app title</h3>
-        <h4>Chat App</h4>
-       </div>
-       
-
-       <div class="sideBar">
-        <h3 class="hidden">chat app side bar display people online</h3>
-        <h4>people online:<span id="num">0</span></h4>
-            <ul id="users"></ul>
-            <p>no one currently online right now.</p>
-       </div>
-
-
-       <div class="messageOut">
-        <section class="messages">
-            <h2>input messages here:</h2>
-            <ul id="messages">
-                <!-- render a new message component for every message -->
-                <newmsg v-for="message in messages" :message="message">
-
-                </newmsg>
-            </ul>
-        </section>
-       </div>
-       <div class="messageIn">
-        <section>
-            <form>
-                <label for="message">something to say?</label>
-                <textarea @focus="catchTextFocus" v-model="message" class="message" id="textarea" autocomplete="off"></textarea>
-                <input @click.prevent="dispatchMessage" type="submit" value="send">
-            </form>
-        </section>
-       </div>
+        <div class="header">
+            <h3 class="hidden">chat app title</h3>
+            <h4>Chat App</h4>
+           </div>
+           
+    
+           <div id="sideBar">
+            <h3 class="hidden">chat app side bar display people online</h3>
+            <h4>people online:<span id="num">0</span></h4>
+                <ul id="users"></ul>
+           </div>
+    
+    
+           <div class="messageOut">
+            <section class="messages">
+                <h2>input messages here:</h2>
+                <ul id="messages">
+                    <!-- render a new message component for every message -->
+                    <newmsg v-for="message in messages" :message="message">
+    
+                    </newmsg>
+                </ul>
+            </section>
+           </div>
+           <div class="messageIn">
+            <section>
+                <form>
+                    <label for="message">something to say?</label>
+                    <textarea @focus="catchTextFocus" v-model="message" class="message" id="textarea" autocomplete="off"></textarea>
+                    <input @click.prevent="dispatchMessage" type="submit" value="send">
+                </form>
+            </section>
+           </div>
     </main>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
