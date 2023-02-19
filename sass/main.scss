@@ -15,6 +15,7 @@
     border: none;
     padding: 0;
 
+    font-family: $main_font;
     box-sizing: border-box;
 }
 
@@ -26,6 +27,8 @@ body {
    // background-size: cover;
     //background-color: rgb(1, 25, 48);
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #252527;
+    color: white;
 }
 
 main { 
@@ -35,6 +38,11 @@ main {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     margin: 5em 13em;
+
+    border-radius: 115px;
+    background: #252527;
+    box-shadow:  38px 38px 57px #1c1c1e,
+             -38px -38px 57px #2e2e30;
     
     //background: rgb(34,193,195);
     //background: linear-gradient(321deg, rgba(34,193,195,1) 0%, rgba(231,188,60,1) 63%, rgba(253,187,45,1) 100%);
@@ -59,13 +67,13 @@ input[type="submit"] {
     width: 45%;
     border-radius: 1em;
     padding: 0.5em;
-    background-color: rgba(0, 150, 150, 0.8);
+    background-color: #ffffff;
     clear: both;
     float: left;
 }
 
 .other_messages {
-    background-color: beige;
+    background-color: #FF8F08;
     width: 45%;
     border-radius: 1em;
     padding: .5em 1em;

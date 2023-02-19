@@ -12,7 +12,7 @@ export default {
 
     data() {
         return {
-            message: 'hello from the template',
+            message:  'hello from the template',
             //every time an incoming message arrives, check against the user ID to see if this is ours.
             //if it is apply a css class to indicate that its outs
             // if it is not, apply a different css class to make that obvious
