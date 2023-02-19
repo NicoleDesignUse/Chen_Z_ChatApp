@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
-    <title>Chat</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <title>:o Chat</title>
 </head>
 <body>
     <h1 class="hidden">Chat App Build</h1>
@@ -20,12 +24,10 @@
     </section>-->
     <main id="app">
         <h2 class="hidden"> chat app ui box display</h2>
-            <h4>Welcome! please choose a username and Icon!</h4>
-                <form >
-                    <input id="nickname" v-model="nickname" type="text" placeholder="nickname?">
-                    <input type="submit" value="Join" />
-                  </form>
-                  <button>Join as a Guest</button>
+        <div class="name">
+            <input type="text" id="nickname" v-model="nickname" placeholder="enter your name here! :)" autocomplete="off"> 
+            <button id="nameBtn">Join</button>
+          </div>
 
         <div class="header">
             <h3 class="hidden">chat app title</h3>

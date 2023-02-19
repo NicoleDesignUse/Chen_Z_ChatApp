@@ -1,19 +1,29 @@
 .header { 
     text-align: center;
     grid-area: 1 / 1 / 2 / 6; 
-    background-color: grey;
+
+
+    padding: 3em;
+    margin: 0em;
 }
 
 #sideBar { 
     grid-area: 2 / 1 / 4 / 2; 
-    background-color: grey;
+    //background-color: grey;
+    padding: 0px 30px;
 }
 .messageOut { 
     grid-area: 2 / 2 / 3 / 6; 
-    background-color: grey;
+    padding: 30px;
+    margin: 0em 8em 2em 0em;
+    //background-color: grey;
+    border-radius: 37px;
+    background: #1f1f23;
+    box-shadow:  11px 11px 23px #161619,
+                -11px -11px 23px #28282e;
 }
 .messageIn { 
     grid-area: 3 / 2 / 4 / 6; 
-    background-color: grey;
+    //background-color: grey;
 }
 
