@@ -24,7 +24,7 @@
     </section>-->
     <main id="app">
         <h2 class="hidden"> chat app ui box display</h2>
-        <div class="name">
+        <div class="name hidden">
             <input type="text" id="nickname" v-model="nickname" placeholder="enter your name here! :)" autocomplete="off"> 
             <button id="nameBtn">Join</button>
           </div>
@@ -44,7 +44,7 @@
     
            <div class="messageOut">
             <section class="messages">
-                <h2>input messages here:</h2>
+                <h2 class="hidden">input messages here:</h2>
                 <ul id="messages">
                     <!-- render a new message component for every message -->
                     <newmsg v-for="message in messages" :message="message">
@@ -56,9 +56,9 @@
            <div class="messageIn">
             <section>
                 <form>
-                    <label for="message">something to say?</label>
+                    <label class="hidden" for="message">something to say?</label>
                     <textarea @focus="catchTextFocus" v-model="message" class="message" id="textarea" autocomplete="off"></textarea>
-                    <input @click.prevent="dispatchMessage" type="submit" value="send">
+                    <div @click.prevent="dispatchMessage" type="submit" class="inputBtn" value="send"> ENTER </div>
                 </form>
             </section>
            </div>
