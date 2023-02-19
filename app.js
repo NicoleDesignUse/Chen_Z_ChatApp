@@ -24,7 +24,10 @@ server.listen(port, () => {
 //socket.io stuff goes here
 io.on('connection', (socket) => {
   console.log('a user connected, socket');
-  socket.emit('connected',{sID: socket.id, message: 'new connection'});
+  //socket.emit('message',{sID: socket.id, message: 'new connection'});
+
+  //Broadcast when user enter the chatroom
+  io.emit('message', 'A user join the chat!')
 
   //lisyrn for incoming messages from ANY one connected to the chat service
   //and then see what that message is
@@ -34,10 +37,25 @@ io.on('connection', (socket) => {
     io.emit('new_message', {message: msg});
   })
 
+
   //listen for a typing event and broadcast  to all
   socket.on('user_typing', function(user){
     console.log(user);
 
     io.emit('typing', {currentlytyping: user})
   })
+
+  //display user thats connected
+  //socket.on('userShow', (usersInfo)=>{
+    //displayUser(userInfo);
+  //})
+
+  //display when user diconnected
+  socket.on('disconnect',() =>{
+    console.log('a user Disconnected');
+
+    //io.emit('message',{sID: socket.id, message: 'A user left the chat'});
+    io.emit('message','A user left the chat');
+  })
+
 });

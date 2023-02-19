@@ -1,7 +1,7 @@
 //imports will always go at the top
 import ChatMsg from './components/ChatMessage.js';
 const socket = io();
-
+const sidebar = document.getElementById('sideBar');
 //untility functions for socket
 function setUserID({ sID }) {
     //debugger;
@@ -17,16 +17,34 @@ function handleUserTyping (user) {
     console.log('somebody is typing something');
 }
 
+socket.on('message', message =>{
+    console.log(message);
+    outputMessage(message);
+})
+
+function outputMessage(message) {
+    const div = document.createElement('div');
+    div.classList.add('message');
+    div.innerHTML = `<p>${message}</p>`;
+    document.getElementById('users').appendChild(div);
+}
+
 const { createApp } = Vue
 
 const vm = createApp({
+
+    el: '#app',
+
     data() {
       return {
         socketID: '',
         message: '',
-        messages: []
+        messages: [],
+
+        state: 0
       }
     },
+    
 
     methods: {
         dispatchMessage() {
@@ -38,6 +56,7 @@ const vm = createApp({
 
             this.message = "";
         },
+
 
         catchTextFocus() {
             //emit a typing event and broadcast it to the server
