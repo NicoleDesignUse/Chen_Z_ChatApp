@@ -29,7 +29,9 @@ socket.on('sideMsg', sidebar => {
 function outputMessage(sidebar) {
     const div = document.createElement('div');
     //div.classList.add('message');
-    div.innerHTML = `<p>${sidebar}</p>`;
+    div.innerHTML = `<p>
+                        ${sidebar}
+                    </p>`;
     document.getElementById('users').appendChild(div);
 }
 
