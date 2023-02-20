@@ -18,9 +18,6 @@ function handleUserTyping (user) {
 }
 
 
-
-
-
 socket.on('sideMsg', sidebar => {
     //console.log(message);
     outputMessage(sidebar);
@@ -52,6 +49,8 @@ const vm = createApp({
         message: '',
         messages: [],
         nickname:'',
+        toggle: true
+
         //state: 0
       }
     },

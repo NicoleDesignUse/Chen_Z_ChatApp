@@ -60,7 +60,7 @@ io.on('connection', (socket) => {
 
     //io.emit('message',{sID: socket.id, message: 'A user left the chat'});
     io.emit('disconnected',{sID: socket.id, message: 'A user left the chat'});
-    socket.broadcast.emit('sideMsg', 'A user has left the chat.');
+    socket.broadcast.emit('sideMsg', 'A user has left the Chat.')
 
 
   })

@@ -18,22 +18,15 @@
 </head>
 <body>
     <h1 class="hidden">Chat App Build</h1>
-               <!--<section>
-        <h2 class="hidden">Start the app</h2>
-        <div class="login">
-            <h3 class="hidden">login section</h3>
-            <!--
-                <input id="nickname" v-model="nickname" type="text" placeholder="nickname?">
-            <button id="nameBtn">Enter</button>
-        </div>
-    </section>-->
     <main id="app">
         <h2 class="hidden"> chat app ui box display</h2>
-        <div class="name hidden">
-            <input type="text" id="nickname" v-model="nickname" placeholder="enter your name here! :)" autocomplete="off"> 
-            <button id="nameBtn">Join</button>
+        <div v-show='toggle' class="name">
+            <div class="toggleBox">
+                <h4><span>:o</span> Chat</h4>
+                <input type="text" id="nickname" v-model="nickname" placeholder="enter your name here! :)" autocomplete="off"> 
+                <button @click='toggle = !toggle' id="nameBtn">Join</button>
+            </div>
           </div>
-
         <div class="header">
             <h3 class="hidden">chat app title</h3>
             <h4>:o Chat</h4>
