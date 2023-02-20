@@ -5,18 +5,49 @@
 
     padding: 3em;
     margin: 0em;
+
+    h4 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    h5 {
+        font-size: 19px;
+        font-weight: 300;
+        font-style: italic;
+    }
 }
 
 #sideBar { 
     grid-area: 2 / 1 / 5 / 2; 
     //background-color: grey;
-    padding: 0px 30px;
+    padding: 0px 20px;
     margin: 0em 3em 3em;
     border-radius: 18px;
     background: #1f1f23;
     box-shadow: inset 12px 12px 24px #1a1a1d,
                 inset -12px -12px 24px #242429;
+
+    .userOnline {
+        padding: 10px;
+        border-radius: 30px;
+        color: #ffffff;
+
+        background-color: #FF8F08;
+        box-shadow: 11px 11px 23px #161619,
+                    -11px -11px 23px #28282e;
+    }
+
+    p {
+        padding-top: .6em;
+        font-weight: 300;
+        font-size: 15px;
+        color: #cfcfcf;
+    }
 }
+
+
+
 .messageOut { 
     grid-area: 2 / 2 / 4 / 5;
     padding: 30px;

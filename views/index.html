@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link css stylesheet -->
     <link rel="stylesheet" href="/css/main.css">
 
+    <!--link google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+
+    <!-- font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/8ebce21447.js" crossorigin="anonymous"></script>
     <title>:o Chat</title>
 </head>
 <body>
@@ -31,14 +36,18 @@
 
         <div class="header">
             <h3 class="hidden">chat app title</h3>
-            <h4>Chat App</h4>
+            <h4>:o Chat</h4>
+            <h5>"Find Your Tribe, Join the Chat."</h5>
            </div>
            
     
            <div id="sideBar">
             <h3 class="hidden">chat app side bar display people online</h3>
-            <h4>people online:<span id="num">0</span></h4>
-                <ul id="users"></ul>
+            <div class="userOnline">
+                
+                <h4>User Online: <span id="num">0</span></h4>
+            </div>
+                <div id="users"></div>
            </div>
     
     
