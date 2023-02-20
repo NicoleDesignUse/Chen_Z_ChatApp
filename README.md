@@ -1,3 +1,4 @@
+![Screenshot 2023-02-19 205239](https://user-images.githubusercontent.com/125234032/219991433-ed7dc090-91c1-438f-ba1c-fede92e97de0.png)
 # Chat App
 
 A real-time chat application built using Express, Node.js, Vue.js, and Socket.IO.
