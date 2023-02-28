@@ -37,13 +37,13 @@ To install and run the application, follow these steps:
 4. Start the server:
     - npm start
 
-5. Open a web browser and navigate to `http://localhost:3000`.
+5. Open a web browser and navigate to `http://localhost:5000`.
 
 ## Usage
 
 To use the application, follow these steps:
 
-1. Open a web browser and navigate to `http://localhost:3000`.
+1. Open a web browser and navigate to `http://localhost:5000`.
 2. Enter your name and click the "Join Chat" button.
 3. Start sending and receiving messages in the chat.
 
